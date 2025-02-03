@@ -17,7 +17,7 @@ function showResponse(isYes) {
         // Redirigir a la página si.html
         window.location.href = "si.html";
     } else {
-        alert("Elegiste No");
+        alert("porque elegiste no? malvada.. activando virus de mordida");
         // Si quieres redirigir a otra página cuando se elige No, descomenta la línea siguiente:
         // window.location.href = "otra_pagina.html";
     }
