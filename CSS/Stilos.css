@@ -1,0 +1,99 @@
+body {
+    background: linear-gradient(to bottom, #ffccd5, #ffd6e0);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+
+h1 {
+    color: #d63384;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    margin-bottom: -250px;  /* Espacio entre el título y los botones */
+    position: relative;
+}
+
+.container {
+    position: relative;
+}
+
+.bear {
+    width: 150px;
+    height: auto;
+    position: relative;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 30px;  /* Ajusta la distancia desde la parte inferior */
+    left: 50%;
+    transform: translateX(-50%); /* Centra horizontalmente */
+}
+
+.buttons button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.yes {
+    background-color: #28a745;
+    color: white;
+}
+
+.no {
+    background-color: #dc3545;
+    color: white;
+}
+
+.message-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.message-container img {
+    width: 200px;
+    margin-top: 10px;
+}
+
+
+.heart {
+    position: absolute;
+    width: 60px;  /* Tamaño pequeño */
+    height: 60px;  /* Tamaño pequeño */
+    opacity: 0.7;  /* Algo de transparencia para un efecto más suave */
+    animation: float 3s ease-in-out forwards;  /* Animación suave hacia arriba */
+}
+
+/* Animación de movimiento hacia arriba */
+@keyframes float {
+    0% {
+        transform: translateY(0);  /* Comienza desde la posición inicial */
+    }
+    100% {
+        transform: translateY(-100vh);  /* Se mueve hasta la parte superior de la pantalla */
+    }
+}
+
+
+.background-gif {
+    position: absolute;
+    top: 31%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;  /* Aumenta el ancho un 10% */
+    height: 70%;  /* Aumenta el alto un 10% */
+    z-index: -1;
+}

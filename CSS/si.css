@@ -1,0 +1,36 @@
+body {
+    margin: 0;  /* Elimina el margen por defecto */
+    font-family: Arial, sans-serif;  /* Ajusta la fuente si lo deseas */
+    position: relative;
+    height: 100vh; /* Asegura que la página ocupe toda la altura */
+    display: flex;
+    justify-content: center;  /* Centra los elementos horizontalmente */
+    align-items: center;      /* Centra los elementos verticalmente */
+    text-align: center;       /* Asegura que el texto dentro de los elementos esté centrado */
+    background-image: url(6510468.jpg);
+    background-repeat: repeat;  /* Repite la imagen en toda la pantalla */
+    background-size: 95%;  /* Ajusta la imagen para que cubra toda la pantalla */
+    background-position: center center;  /* Alinea la imagen al centro */
+}
+
+
+
+
+.background-gif {
+    position: absolute;
+    top: 50%;  /* Centra verticalmente */
+    left: 50%;  /* Centra horizontalmente */
+    transform: translate(-50%, -50%);  /* Asegura que la imagen esté perfectamente centrada */
+    width: 50%;  /* Ajusta el tamaño de la imagen */
+    height: auto;  /* Mantiene la relación de aspecto original */
+    z-index: -1;   /* Asegura que la imagen esté en el fondo */
+    object-fit: contain;  /* Evita que la imagen se distorsione */
+}
+
+h1 {
+    position: absolute;
+    top: 0%;  /* Ajusta la posición del texto (más arriba en la página) */
+    left: 50%;  /* Centra el texto horizontalmente */
+    transform: translateX(-50%);  /* Ajusta el texto para centrarlo perfectamente */
+    font-size: 2rem;  /* Ajusta el tamaño de la fuente si es necesario */
+}
