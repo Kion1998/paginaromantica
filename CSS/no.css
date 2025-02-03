@@ -1,0 +1,37 @@
+body {
+    margin: 0;  /* Elimina el margen por defecto */
+    font-family: Arial, sans-serif;  /* Ajusta la fuente si lo deseas */
+    position: relative;
+    height: 100vh; /* Asegura que la página ocupe toda la altura */
+    display: flex;
+    justify-content: center;  /* Centra los elementos horizontalmente */
+    align-items: center;      /* Centra los elementos verticalmente */
+    text-align: center;       /* Asegura que el texto dentro de los elementos esté centrado */
+    background-image: url(tokyo\ revengers\ manga\ 122\ _\ twin\ dragon.jpg);
+    background-repeat: repeat;  /* Repite la imagen en toda la pantalla */
+    background-size: 95%;  /* Ajusta la imagen para que cubra toda la pantalla */
+    background-position: center center;  /* Alinea la imagen al centro */
+}
+
+
+
+
+.background-gif {
+    position: absolute;
+    top: 50%;  /* Centra verticalmente */
+    right: 0;  /* Mueve la imagen a la derecha */
+    transform: translateY(-50%);  /* Centra verticalmente con respecto a la mitad de la imagen */
+    width: 35%;  /* Ajusta el tamaño de la imagen (puedes reducir o aumentar este valor) */
+    height: auto;  /* Mantiene la relación de aspecto original */
+    z-index: -1;   /* Asegura que la imagen esté en el fondo */
+    object-fit: contain;  /* Evita que la imagen se distorsione */
+}
+
+h1 {
+    position: absolute;
+    top: 0%;  /* Ajusta la posición del texto (más arriba en la página) */
+    left: 50%;  /* Centra el texto horizontalmente */
+    transform: translateX(-50%);  /* Ajusta el texto para centrarlo perfectamente */
+    font-size: 120px;  /* Ajusta el tamaño de la fuente si es necesario */
+    color: gold;  /* Cambia el color de la fuente a dorado */
+}
